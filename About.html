@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about ClothPedia - your ultimate source for clothing information, fashion guides, and style tips.">
+  <meta name="keywords" content="about clothpedia, clothing information, fashion guide, stitched, unstitched">
+  <title>ClothPedia</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo-2.png" alt="ClothPedia Logo" height="50">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home me-1"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">
+              <i class="fas fa-th-large me-1"></i> Categories
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About.html">
+              <i class="fas fa-info-circle me-1"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">
+              <i class="fas fa-envelope me-1"></i> Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-link nav-link" id="searchToggle">
+              <i class="fas fa-search"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-link nav-link" id="themeToggle" title="Toggle Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Search Overlay -->
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <button class="search-close" id="searchClose">&times;</button>
+      <div class="search-box">
+        <input type="text" id="searchInput" class="form-control" placeholder="Search ClothPedia...">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      <div id="searchResults" class="search-results mt-4"></div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="hero-title">About ClothPedia</h1>
+          <p class="hero-subtitle">Your Ultimate Clothing Encyclopedia</p>
+          <p class="hero-description">Discover the history, types, and styles of clothing from around the world.</p>
+        </div>
+        <div class="col-lg-6">
+          <video src="VideoAbout.mp4" class="about-video img-fluid rounded-4 shadow-lg" autoplay muted loop></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Origin Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="info-card">
+        <div class="info-icon">
+          <i class="fas fa-history"></i>
+        </div>
+        <h3>The Origin of Clothing</h3>
+        <p>Clothing came From: Old English claðas "cloths; garments for the body," originally the plural of clað "cloth" (see cloth), which, in 19c., after the sense of "article of clothing" had mostly faded from it, acquired a new plural form, cloths, to distinguish it from this word.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Types Section -->
+  <section class="py-5 bg-light-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Two Ways to Buy or Make Clothes</h2>
+        <p class="section-subtitle">Choose the style that fits your needs</p>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-lg-6">
+          <div class="type-card">
+            <img src="pic8.jpg" alt="Stitched Clothing" class="type-image">
+            <div class="type-content">
+              <h3><i class="fas fa-check-circle me-2"></i> Stitched (Readymade)</h3>
+              <p>Ready to wear clothes available with various sizes. Perfect for immediate use without any modifications needed.</p>
+              <div class="size-list">
+                <h5>Available Sizes:</h5>
+                <div class="size-tags">
+                  <span class="size-tag">XXS</span>
+                  <span class="size-tag">XS</span>
+                  <span class="size-tag">S</span>
+                  <span class="size-tag">M</span>
+                  <span class="size-tag">L</span>
+                  <span class="size-tag">XL</span>
+                  <span class="size-tag">XXL</span>
+                  <span class="size-tag">XXXL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="type-card">
+            <img src="pic9.jpeg" alt="Un-Stitched Clothing" class="type-image">
+            <div class="type-content">
+              <h3><i class="fas fa-cut me-2"></i> Un-Stitched</h3>
+              <p>Get plain cloth or styled pieces separately and customize to your perfect fit. Includes shirt, sleeves, trousers, and more as separate pieces for tailoring.</p>
+              <ul class="feature-list">
+                <li>Plain cloth with custom embroidery</li>
+                <li>Styled and printed pieces</li>
+                <li>Customizable to your measurements</li>
+                <li>Perfect fit guaranteed</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasions Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Clothing for Different Occasions</h2>
+        <p class="section-subtitle">Find the perfect style for every event</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-tshirt"></i>
+            <h5>Casual Wear</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-user-tie"></i>
+            <h5>Formal Wear</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-briefcase"></i>
+            <h5>Business Attire</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-star"></i>
+            <h5>Fancy Wear</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-ring"></i>
+            <h5>Bridal Wear</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-running"></i>
+            <h5>Sports Wear</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-heart"></i>
+            <h5>Lingerie</h5>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="occasion-card">
+            <i class="fas fa-home"></i>
+            <h5>House Clothes</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Types Section -->
+  <section class="py-5 bg-light-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Types of Clothing Qualities</h2>
+        <p class="section-subtitle">Understanding different quality levels</p>
+      </div>
+
+      <div class="accordion" id="qualityAccordion">
+        <!-- Original -->
+        <div class="accordion-item quality-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#original">
+              <i class="fas fa-crown me-2"></i> 1. Original
+            </button>
+          </h2>
+          <div id="original" class="accordion-collapse collapse show" data-bs-parent="#qualityAccordion">
+            <div class="accordion-body">
+              <p>Official articles from registered brands designed by professional designers. Amazing quality protected under copyright laws.
+              </p>
+              <p>As you can get a general idea for the word ‘Original’ that it’s Official, also called ‘Original Articles’. You can get these Articles from a Brand, of course an Official Brand (Registered). These articles are designed by Professional-Designers for the Customers. The Quality of these Clothes are Amazing, Astonishing and of course not available anywhere else. Original articles are designed under the Copyright-Laws and Designer-Agreement, No one else can use these designs, if anyone does, he/she will be penalized under court. You can make your own Design and indeed it wil be Official and no one copy this Design without your Consent. You can buy these Articles from Brands like: Sui Dhaga, Adidas, Levis, Royal Ascort, etc.
+              </p>
+              <div class="brand-links">
+                <strong>Shop Online:</strong>
+                <a href="https://www.instagram.com/sui_dhaga.official" target="_blank">Sui Dhaga</a> |
+                <a href="https://factoryoutletpakistan.com/collections/levis" target="_blank">Levis</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- King Copy -->
+        <div class="accordion-item quality-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kingCopy">
+              <i class="fas fa-star me-2"></i> 2. King Copy / Replica
+            </button>
+          </h2>
+          <div id="kingCopy" class="accordion-collapse collapse" data-bs-parent="#qualityAccordion">
+            <div class="accordion-body">
+              <p>Professional copies of original articles. Almost same quality as originals but slightly cheaper. Made under contract with income sharing (5-10%).</p>
+              <p>King Copy or Replica (Copy), Normally used as ‘King-Copy’. It’s Kind of like Official means theres a But (Technicality), You can get these Types of Clothes from a Normal Brand, That Brand can or cannot be Officially Registered. Basically, these Replicas are a Professional copy of the original articles, Dealers of King-Copy Articles gets the Design from Original Brands or can be availed from any Registered Company. What happens is that the dealers sign a contract that can be at any terms of the company, for example it can be that little income from each suit is given to the company it can be at any percent, normally its between 5-10%. You can say that Quality of these clothes are almost as same as the Original-Articles but are a little cheaper, Sometimes there's a little difference but it cannot be Pointed out that easily (only by Professionalists) and sometimes there's not a Single Difference as it's the Exact same Copy. You can buy these articles from Brands like: Elo, Outfitters, One-Store, DFO, etc.</p>
+              <div class="brand-links">
+                <strong>Shop Online:</strong>
+                <a href="https://outfitters.com.pk" target="_blank">Outfitters</a> |
+                <a href="https://dfo.com.pk/" target="_blank">DFO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master Copy -->
+        <div class="accordion-item quality-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#masterCopy">
+              <i class="fas fa-certificate me-2"></i> 3. Master Copy
+            </button>
+          </h2>
+          <div id="masterCopy" class="accordion-collapse collapse" data-bs-parent="#qualityAccordion">
+            <div class="accordion-body">
+              <p>Not official but well-made copies with minor differences. Available online and in shops. Quality varies - A+ Master Replica being the best.</p>
+              <p>Master Replica Normally used as ‘Master-Copy’. It’s is Not Official Article from any side. These types of Designs are easily available from Online Shopping, Normal Shops, etc. Master Replicas are not that costly Basically, these Replicas are Mastered Copied from the Original Designs, but a with a little difference which is almost not Recognizable by a Normal Person/Customer, For example there could be a little Shade difference in Cloth, a small difference in Punching Design, a little difference in the angle of Embroidery or extra Embroidery at any point (it can be Soo little or fully obvious), a little Printing Difference in the angle of Printing or Some Extra Prining at some random point etc. Quality of these Clothes can Differ as from where you are purchasing it from some places it can almost be same as an Original in Stuff which we call 'A+ Master Replica', and from some places it can be Waste of Money. But it’s easy to identify that it’s a Master-Replica or not just by the Look of it; Model pic can be amazing, and you will probably have no doubt that the Stuff would be Amazing as well. Anyone can make them, but if you make the exact same copy as the Original Design then indeed you will be Penalized in Court. You can Purchase these Articles from Brands or Places like: Stylish Store, Bend the Trend, Daraz, Modern Designers, Small Brand Businesses, etc.</p>
+              <div class="brand-links">
+                <strong>Shop Online:</strong>
+                <a href="https://www.instagram.com/ethnothreads.official" target="_blank">Ethno Threads</a> |
+                <a href="https://www.instagram.com/moderndesigners.official" target="_blank">Modern Designers</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Normal Copy -->
+        <div class="accordion-item quality-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#normalCopy">
+              <i class="fas fa-tag me-2"></i> 4. Replica (Normal Copy)
+            </button>
+          </h2>
+          <div id="normalCopy" class="accordion-collapse collapse" data-bs-parent="#qualityAccordion">
+            <div class="accordion-body">
+              <p>Cheap copies with lower quality materials and embroidery. Affordable and usually worn at home. No copyright concerns as designs differ from originals.</p>
+              <p>Normal Replicas or Copies of the Original Dress are not so Good/Likeable Type of Clothing you can find in the Market. Basically, These Replicas are Copied from any Design, anyone can easily tell that it’s a Normal Copy or Replica just by looking at it, as not very good stuff of clothing is used and the embroidery, printed quality is not good at well. These type of Clothes are Cheap and don’t Cost that much, Easily Affordable by most of the People. These Designs are Normally Worn at Home. These Designs are also known as Cheap Copy. As These Designs are Different from Original Designs so you don’t have to Face any Charges. You can Purchase these Articles from Places like: Local Shops, Local Market, Fake (Non-Registered) Online Pages etc.</p>
+              <div class="brand-links">
+                <strong>Shop Online:</strong>
+                <a href="https://www.facebook.com/Zantaonline-454134741434447" target="_blank">Zanta</a> |
+                <a href="https://www.facebook.com/milano.com.pk/" target="_blank">Milano</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- B-Cloth -->
+        <div class="accordion-item quality-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bCloth">
+              <i class="fas fa-cut me-2"></i> 5. B-Cloth
+            </button>
+          </h2>
+          <div id="bCloth" class="accordion-collapse collapse" data-bs-parent="#qualityAccordion">
+            <div class="accordion-body">
+              <p><strong>Cut-Pieces:</strong> Made from leftover pieces after dress completion. Mix and match from different designs.</p>
+              <p>In the Sense of Cut-Pieces, These Clothes are made up from the Pieces left behind after completion of a Dress (Extra Clothes). These Dresses can be a whole New Design after appending multiple cut-pieces together from a single or multiple dresses, For example you can take shirt/Kurti/Kurta from one Design, Pent/Trouser from another and Dupatta/Shawl from a whole another Design, after completion it can be Amazing or not even be able to Wear/See. You can Purchase these Dresses/Cut-Pieces from Places like: Factories, Local markets, Local Shops etc.</p>
+              <p><strong>Used/Second-hand:</strong> Pre-owned clothing from around the world. Very affordable but quality varies. Available at local markets and thrift stores.</p>
+              <p>In the Sense of Used B-Type Clothing, these Designs are 2nd hand Clothing. As anyone can guess that these are used Cloths, these types of Clothes come from around the World, Quality of these Clothes are usually Torn, used, or sometimes Soo much used. These Clothes are Soo much cheap and Easy to buy for anyone. You can Purchase these Articles from Places like: Local markets, Thrift stores, Charity etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="footer-title">ClothPedia</h5>
+          <p class="footer-text">Your ultimate encyclopedia for clothing and fashion. Discover, learn, and explore the world of style.</p>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="footer-title">Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://suidhagaofficial.com" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+            <a href="https://www.facebook.com/100083427817095/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/sui_dhaga.official" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=923147800668" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="footer-copyright">
+            Copyright &copy; 2022 ClothPedia | In Collaboration with SUI DHAGA | Created by Muhammad Shehzam
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
